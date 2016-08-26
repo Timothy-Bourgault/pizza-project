@@ -3,6 +3,7 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Jim+Nightshade|Mr+Dafoe" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -19,27 +20,72 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron" id="title">
-      <div class="row">
-        <div class="col-xs-3">
-          <img src="img/margharita.png" alt="A Pizza Pie!" />
+    <div class="container">
+      <div class="jumbotron" id="title">
+        <div class="row">
+          <div class="col-xs-3" id="angelSlice">
+          <img src="img/angel-slice.png" alt="" />
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-8">
+            <h1 id="restaurantName">Giovanni's</h1>
+            <h2 id="lilSlice">Lil ' Slice Of Heaven</h2>
+          </div>
         </div>
-        <div class="col-xs-1">
-
-        </div>
-        <div class="col-xs-8">
-          <h1>Giovanni's Lil' Slice Of Heaven</h1>
-          <h2>Come on down and get your angel wings!</h2>
-        </div>
+        <h3 id="comeDown">Come on down and get your angel wings!!!</h3>
       </div>
     </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2 class="specialTitle">Choose from our 4 Classic Pizza Special Combos:</h2>
+        <div class="row" id="specials">
+          <div class="col-xs-3">
+            <h3>Old Style Margharita</h3>
+            <img src="img/margharita.png" alt="A Pizza Pie!" />
+            <h4>$15.00</h4>
+            <label class="radio-inline">
+              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
+            </label>
+          </div>
+          <div class="col-xs-3">
+            <h3>Dirty South BBQ</h3>
+            <img src="img/bbq-pizza.png" alt="A Pizza Pie!" />
+            <h4>$17.00</h4>
+            <label class="radio-inline">
+              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
+            </label>
+          </div>
+          <div class="col-xs-3">
+            <h3>Veggie Supreme</h3>
+            <img src="img/veggie-pie.png" alt="A Pizza Pie!" />
+            <h4>$18.00</h4>
+            <label class="radio-inline">
+              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
+            </label>
+          </div>
+          <div class="col-xs-3">
+            <h3>Giovanni's Special</h3>
+            <img src="img/supreme-pizza.png" alt="A Pizza Pie!" />
+            <h4>$21.00</h4>
+            <label class="radio-inline">
+              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
+            </label>
+          </div>
+        </div>
+        <br />
+        <h2 class="specialTitle">v---Or...Make up your own custom pizza combinations below---v</h2>
+      </div>
+    </div>
+
     <div class="container">
       <div class="jumbotron" id="options_screen">
-        <h1>How Do You like your pie?</h1>
+        <h1 id="optionsTitle">How Do You like your pie?</h1>
         <form class="form-horizontal" id="options_fields">
           <div class="row">
-            <div class="col-xs-3">
-              <h2>1. Choose what size you would like...</h2>
+            <div class="col-xs-3 size">
+              <h2 class="optionTitle">1. Choose what size you would like...</h2>
               <label class="control-label" for="selectsize1">Pizza One: </label>
               <select class="form-control" id="selectsize1">
                 <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
@@ -73,8 +119,9 @@
                 <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
               </select>
             </div>
-            <div class="col-xs-3">
-              <h2>2. Choose From Our Wide Range of Crusts!</h2>
+
+            <div class="col-xs-3 crust">
+              <h2 class="optionTitle">2. Choose From Our Wide Range of Crusts!</h2>
               <label class="control-label" for="selectCrust1">Pizza One: </label>
               <select class="form-control" id="selectCrust1">
                 <option value="Classic New York Style">Classic New York Style</option>
@@ -104,8 +151,9 @@
                 <option value="Cardboard Gluten Free">Cardboard Gluten Free</option>
               </select>
             </div>
-            <div class="col-xs-3">
-              <h2>3. Next, Choose your favorite sauce...</h2>
+
+            <div class="col-xs-3 sauce">
+              <h2 class="optionTitle">3. Next, Choose your favorite sauce...</h2>
               <label class="control-label" for="selectSauce1">Pizza 1: </label>
               <select class="form-control" id="selectSauce1">
                 <option value="0">Classic Marinara</option>
@@ -139,27 +187,49 @@
                 <option value="4">Spicy Hot Pepper</option>
               </select>
             </div>
-            <div class="col-xs-3">
-              <h4>Matchpoint: </h4>
-              <input id="matchpoint" name="matchpoint" type="text" placeholder="Enter a Number" class="form-control input-md" required="">
-              <h4>Number of Dice: </h4>
-              <input id="dieinput" name="dieinput" type="text" placeholder="Enter a Number" class="form-control input-md" required="">
-              <h4>Sides Per Die: </h4>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio1" value="4"> 4
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio2" value="6" checked="checked"> 6
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio3" value="8"> 8
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio4" value="12"> 12
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio5" value="20"> 20
-              </label>
+
+            <div class="col-xs-3 cheese">
+              <h2 class="optionTitle">4. Say Cheese! Please!! Please!!! Say IT, NOW!</h2>
+              <label class="control-label" for="selectCheese1">Pizza 1: </label>
+              <select class="form-control" id="selectCheese1">
+                <option value="0">Mozzarella</option>
+                <option value="1">Provalone</option>
+                <option value="2">Cheddar</option>
+                <option value="3">Brie</option>
+                <option value="4">Cashew Cheese</option>
+                <option value="4">Feta</option>
+                <option value="4">Gorgonzola</option>
+              </select>
+              <label class="control-label" for="selectCheese2">Pizza 2: </label>
+              <select class="form-control" id="selectCheese2">
+                <option value="0">Mozzarella</option>
+                <option value="1">Provalone</option>
+                <option value="2">Cheddar</option>
+                <option value="3">Brie</option>
+                <option value="4">Cashew Cheese</option>
+                <option value="4">Feta</option>
+                <option value="4">Gorgonzola</option>
+              </select>
+              <label class="control-label" for="selectCheese3">Pizza 3: </label>
+              <select class="form-control" id="selectCheese3">
+                <option value="0">Mozzarella</option>
+                <option value="1">Provalone</option>
+                <option value="2">Cheddar</option>
+                <option value="3">Brie</option>
+                <option value="4">Cashew Cheese</option>
+                <option value="4">Feta</option>
+                <option value="4">Gorgonzola</option>
+              </select>
+              <label class="control-label" for="selectCheese4">Pizza 4: </label>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Mozzarella</option>
+                <option value="1">Provalone</option>
+                <option value="2">Cheddar</option>
+                <option value="3">Brie</option>
+                <option value="4">Cashew Cheese</option>
+                <option value="4">Feta</option>
+                <option value="4">Gorgonzola</option>
+              </select>
             </div>
           </form>
         </div>
@@ -167,132 +237,334 @@
         <form class="form-horizontal" id="options_fields">
           <div class="row">
             <div class="col-xs-3">
-              <h2>1. Choose what size you would like...</h2>
-              <label class="control-label" for="selectsize1">Pizza One: </label>
-              <select class="form-control" id="selectsize1">
-                <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-                <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-                <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-                <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-                <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
+              <h2 class="optionTitle">5. Expensive Proteins...</h2>
+              <label class="control-label" for="selectprotein1">Pizza One: </label>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Pepperoni</option>
+                <option value="1">Italian Sausage</option>
+                <option value="2">Meatballs</option>
+                <option value="3">Bacon</option>
+                <option value="4">Ham</option>
+                <option value="4">Salmon</option>
+                <option value="4">Hamster</option>
               </select>
               <label class="control-label" for="selectsize2">Pizza Two: </label>
-              <select class="form-control" id="selectsize1">
-                <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-                <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-                <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-                <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-                <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Pepperoni</option>
+                <option value="1">Italian Sausage</option>
+                <option value="2">Meatballs</option>
+                <option value="3">Bacon</option>
+                <option value="4">Ham</option>
+                <option value="4">Salmon</option>
+                <option value="4">Hamster</option>
               </select>
               <label class="control-label" for="selectsize3">Pizza Three: </label>
-              <select class="form-control" id="selectsize1">
-                <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-                <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-                <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-                <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-                <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Pepperoni</option>
+                <option value="1">Italian Sausage</option>
+                <option value="2">Meatballs</option>
+                <option value="3">Bacon</option>
+                <option value="4">Ham</option>
+                <option value="4">Salmon</option>
+                <option value="4">Hamster</option>
               </select>
               <label class="control-label" for="selectsize4">Pizza Four: </label>
-              <select class="form-control" id="selectsize1">
-                <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-                <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-                <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-                <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-                <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Pepperoni</option>
+                <option value="1">Italian Sausage</option>
+                <option value="2">Meatballs</option>
+                <option value="3">Bacon</option>
+                <option value="4">Ham</option>
+                <option value="4">Salmon</option>
+                <option value="4">Hamster</option>
               </select>
             </div>
+
             <div class="col-xs-3">
-              <h2>2. Choose From Our Wide Range of Crusts!</h2>
-              <label class="control-label" for="selectCrust1">Pizza One: </label>
-              <select class="form-control" id="selectCrust1">
-                <option value="Classic New York Style">Classic New York Style</option>
-                <option value="Chicago Deep Dish">Chicago Deep Dish</option>
-                <option value="Quinoa Crust">Quinoa Crust</option>
-                <option value="Cardboard Gluten Free">Cardboard Gluten Free</option>
+              <h2 class="optionTitle">6. Garden Variety of Toppings!</h2>
+              <label class="control-label" for="selectVeggies1">Pizza One: </label>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Spinach</option>
+                <option value="1">Mushrooms</option>
+                <option value="2">Pinapple</option>
+                <option value="3">Black Olives</option>
+                <option value="4">Green Olives</option>
+                <option value="4">Onions</option>
+                <option value="4">Garilic</option>
               </select>
               <label class="control-label" for="selectCrust2">Pizza Two: </label>
-              <select class="form-control" id="selectCrust2">
-                <option value="Classic New York Style">Classic New York Style</option>
-                <option value="Chicago Deep Dish">Chicago Deep Dish</option>
-                <option value="Quinoa Crust">Quinoa Crust</option>
-                <option value="Cardboard Gluten Free">Cardboard Gluten Free</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Spinach</option>
+                <option value="1">Mushrooms</option>
+                <option value="2">Pinapple</option>
+                <option value="3">Black Olives</option>
+                <option value="4">Green Olives</option>
+                <option value="4">Onions</option>
+                <option value="4">Garilic</option>
               </select>
               <label class="control-label" for="selectCrust3">Pizza Three: </label>
-              <select class="form-control" id="selectCrust3">
-                <option value="Classic New York Style">Classic New York Style</option>
-                <option value="Chicago Deep Dish">Chicago Deep Dish</option>
-                <option value="Quinoa Crust">Quinoa Crust</option>
-                <option value="Cardboard Gluten Free">Cardboard Gluten Free</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Spinach</option>
+                <option value="1">Mushrooms</option>
+                <option value="2">Pinapple</option>
+                <option value="3">Black Olives</option>
+                <option value="4">Green Olives</option>
+                <option value="4">Onions</option>
+                <option value="4">Garilic</option>
               </select>
               <label class="control-label" for="selectCrust4">Pizza Four: </label>
-              <select class="form-control" id="selectCrust4">
-                <option value="Classic New York Style">Classic New York Style</option>
-                <option value="Chicago Deep Dish">Chicago Deep Dish</option>
-                <option value="Quinoa Crust">Quinoa Crust</option>
-                <option value="Cardboard Gluten Free">Cardboard Gluten Free</option>
+              <select class="form-control" id="selectCheese4">
+                <option value="0">Spinach</option>
+                <option value="1">Mushrooms</option>
+                <option value="2">Pinapple</option>
+                <option value="3">Black Olives</option>
+                <option value="4">Green Olives</option>
+                <option value="4">Onions</option>
+                <option value="4">Garilic</option>
               </select>
             </div>
-            <div class="col-xs-3">
-              <h2>3. Next, Choose your favorite sauce...</h2>
-              <label class="control-label" for="selectSauce1">Pizza 1: </label>
-              <select class="form-control" id="selectSauce1">
-                <option value="0">Classic Marinara</option>
-                <option value="1">Creamy Alfredo</option>
-                <option value="2">Pesto</option>
-                <option value="3">Thai Curry</option>
-                <option value="4">Spicy Hot Pepper</option>
-              </select>
-              <label class="control-label" for="selectSauce1">Pizza 2: </label>
-              <select class="form-control" id="selectSauce1">
-                <option value="0">Classic Marinara</option>
-                <option value="1">Creamy Alfredo</option>
-                <option value="2">Pesto</option>
-                <option value="3">Thai Curry</option>
-                <option value="4">Spicy Hot Pepper</option>
-              </select>
-              <label class="control-label" for="selectSauce1">Pizza 3: </label>
-              <select class="form-control" id="selectSauce1">
-                <option value="0">Classic Marinara</option>
-                <option value="1">Creamy Alfredo</option>
-                <option value="2">Pesto</option>
-                <option value="3">Thai Curry</option>
-                <option value="4">Spicy Hot Pepper</option>
-              </select>
-              <label class="control-label" for="selectSauce1">Pizza 4: </label>
-              <select class="form-control" id="selectSauce1">
-                <option value="0">Classic Marinara</option>
-                <option value="1">Creamy Alfredo</option>
-                <option value="2">Pesto</option>
-                <option value="3">Thai Curry</option>
-                <option value="4">Spicy Hot Pepper</option>
-              </select>
+
+            <div class="col-xs-4">
+              <h2 class="optionTitle">7. Additional topping combinations...</h2>
+              <label class="control-label" for="additionalSauce">Add Toppings To Pizza 1: </label>
+              <div class="btn-group-xs">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sauce <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Sauce - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Sauces - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Sauces - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Sauces - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Sauces - You Are One Saucy Individual!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cheese <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Cheese - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Cheeses - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Cheeses - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Cheeses - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Cheeses - You Cheesey Bastard!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Protein <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Protein - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Protein - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Protein - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Protein - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Protein - Are You Sure?!?!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Veggies <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Veggie - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Veggie - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Veggie - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Veggie - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Veggie - Keep It Up!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Other Topping - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Other Topping - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Other Topping - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Other Topping - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Other Topping - You Are Other Worldly!</a></li>
+                </ul>
+              </div>
+
+              <label class="control-label spacer" for="selectSauce1">Add Toppings To Pizza 2: </label>
+              <div class="btn-group-xs">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sauce <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Sauce - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Sauces - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Sauces - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Sauces - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Sauces - You Are One Saucy Individual!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cheese <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Cheese - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Cheeses - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Cheeses - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Cheeses - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Cheeses - You Cheesey Bastard!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Protein <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Protein - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Protein - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Protein - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Protein - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Protein - Are You Sure?!?!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Veggies <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Veggie - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Veggie - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Veggie - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Veggie - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Veggie - Keep It Up!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Other Topping - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Other Topping - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Other Topping - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Other Topping - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Other Topping - You Are Other Worldly!</a></li>
+                </ul>
+              </div>
+
+              <label class="control-label spacer" for="selectSauce1">Add Toppings To Pizza 3: </label>
+              <div class="btn-group-xs">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sauce <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Sauce - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Sauces - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Sauces - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Sauces - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Sauces - You Are One Saucy Individual!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cheese <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Cheese - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Cheeses - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Cheeses - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Cheeses - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Cheeses - You Cheesey Bastard!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Protein <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Protein - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Protein - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Protein - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Protein - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Protein - Are You Sure?!?!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Veggies <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Veggie - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Veggie - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Veggie - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Veggie - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Veggie - Keep It Up!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Other Topping - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Other Topping - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Other Topping - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Other Topping - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Other Topping - You Are Other Worldly!</a></li>
+                </ul>
+              </div>
+
+              <label class="control-label spacer" for="selectSauce1">Add Toppings To Pizza 4:</label>
+              <div class="btn-group-xs">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sauce <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Sauce - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Sauces - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Sauces - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Sauces - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Sauces - You Are One Saucy Individual!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cheese <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Cheese - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Cheeses - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Cheeses - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Cheeses - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Cheeses - You Cheesey Bastard!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Protein <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Protein - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Protein - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Protein - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Protein - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Protein - Are You Sure?!?!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Veggies <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Veggie - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Veggie - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Veggie - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Veggie - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Veggie - Keep It Up!</a></li>
+                </ul>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" value="0"> +1 Other Topping - Some Variety</a></li>
+                  <li><a href="#" value="1"> +2 Other Topping - Make It Interesting</a></li>
+                  <li><a href="#" value="2"> +3 Other Topping - Variety Is The Spice Of Life</a></li>
+                  <li><a href="#" value="3"> +4 Other Topping - Variety Is Your Life!</li>
+                  <li><a href="#" value="4"> +5 Other Topping - You Are Other Worldly!</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <h4>Matchpoint: </h4>
+
+            <div class="col-xs-2">
+              <h4 class="optionTitle" id="headRoom">Patron Name: </h4>
               <input id="matchpoint" name="matchpoint" type="text" placeholder="Enter a Number" class="form-control input-md" required="">
-              <h4>Number of Dice: </h4>
+
+              <h4 class="optionTitle">Phone Number (if applicable): </h4>
               <input id="dieinput" name="dieinput" type="text" placeholder="Enter a Number" class="form-control input-md" required="">
-              <h4>Sides Per Die: </h4>
+
+              <h4 class="optionTitle">Order In / Take Out / Delivery: </h4>
               <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio1" value="4"> 4
+                <input type="radio" name="orderType" id="inlineRadio1" value="Order In" checked="checked">Order In
               </label>
               <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio2" value="6" checked="checked"> 6
+                <input type="radio" name="orderType" id="inlineRadio2" value="T" checked="checked">Take Out
               </label>
               <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio3" value="8"> 8
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio4" value="12"> 12
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="diesides" id="inlineRadio5" value="20"> 20
+                <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Delivery
               </label>
               <div id="configSubmit">
                 <button type="submit" class="submit_button btn btn-primary btn-lg" id="submit_button">Toss Um Up!!!</button>
               </div>
             </form>
-          </div>  
+          </div>
         </div>
       </div>
     </div>

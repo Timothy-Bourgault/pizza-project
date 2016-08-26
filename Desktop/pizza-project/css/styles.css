@@ -1,0 +1,67 @@
+body {
+  background-color: #B02203;
+}
+
+.jumbotron {
+  background-color: #578C05;
+}
+
+#angelSlice img{
+  width: 24em;
+}
+
+#title {
+  margin-top: 4em;
+}
+
+#restaurantName {
+  text-align: left;
+  font-family: 'Jim Nightshade', cursive;
+  font-size: 12em;
+  color: #B02203;
+  margin-bottom: -0.3em;
+}
+
+#lilSlice {
+  font-family: 'Mr Dafoe', cursive;
+  text-align: left;
+  font-size: 4em;
+  margin-left: 1em;
+}
+
+#comeDown {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 6em;
+  text-align: center;
+}
+
+.specialTitle {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+#specials {
+  text-align: center;
+}
+#specials img {
+  width: 15em;
+}
+
+#optionsTitle {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.optionTitle {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.spacer {
+  margin-top: 15px;
+}
+
+#submit_button {
+  margin-top: 1em;
+
+}
