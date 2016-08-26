@@ -33,15 +33,19 @@ body {
   font-family: 'Berkshire Swash', cursive;
   font-size: 6em;
   text-align: center;
+  color: #504B1D;
 }
 
 .specialTitle {
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
+  color: #504B1D;
+
 }
 
 #specials {
   text-align: center;
+  color: #504B1D;
 }
 #specials img {
   width: 15em;
@@ -50,11 +54,16 @@ body {
 #optionsTitle {
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
+  color: #504B1D;
 }
 
 .optionTitle {
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
+}
+
+#optionsMiddle {
+  margin-top: 2em;
 }
 
 .spacer {
@@ -63,5 +72,8 @@ body {
 
 #submit_button {
   margin-top: 1em;
+}
 
+#headRoom {
+  margin-top: 1.7em;
 }
