@@ -27,13 +27,38 @@ body {
   text-align: left;
   font-size: 4em;
   margin-left: 1em;
+  color: #14174E;
 }
 
 #comeDown {
   font-family: 'Berkshire Swash', cursive;
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
   color: #504B1D;
+}
+
+.slide {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: -2.1em;
+  margin-bottom: -2em;
+  background-color: #B02203;
+}
+
+.images {
+  width: 100%;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
+}
+
+.carousel-indicators li {
+  background-color: #222;
 }
 
 .specialTitle {
