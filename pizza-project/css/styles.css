@@ -8,6 +8,9 @@ body {
 
 #angelSlice img{
   width: 24em;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 #title {
@@ -15,24 +18,23 @@ body {
 }
 
 #restaurantName {
-  text-align: left;
+  text-align: center;
   font-family: 'Jim Nightshade', cursive;
-  font-size: 12em;
+  font-size: 7.5em;
   color: #B02203;
   margin-bottom: -0.3em;
 }
 
 #lilSlice {
   font-family: 'Mr Dafoe', cursive;
-  text-align: left;
+  text-align: center;
   font-size: 4em;
-  margin-left: 1em;
   color: #14174E;
 }
 
 #comeDown {
   font-family: 'Berkshire Swash', cursive;
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
   color: #504B1D;
 }
@@ -65,6 +67,7 @@ body {
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
   color: #504B1D;
+  font-size: 19px;
 
 }
 
@@ -73,7 +76,7 @@ body {
   color: #504B1D;
 }
 #specials img {
-  width: 15em;
+  width: 4em;
 }
 
 #optionsTitle {
@@ -85,10 +88,15 @@ body {
 .optionTitle {
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
+  font-size: 20px;
 }
 
 #optionsMiddle {
   margin-top: 2em;
+}
+
+#addToppings {
+  text-align: center;
 }
 
 .spacer {
@@ -97,6 +105,16 @@ body {
 
 #submit_button {
   margin-top: 1em;
+}
+
+#patronRadio {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 20px;
+}
+
+#configSubmit {
+  text-align: center;
 }
 
 #headRoom {
