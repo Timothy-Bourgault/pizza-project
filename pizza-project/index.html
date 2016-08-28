@@ -59,102 +59,105 @@
     <div class="container">
       <div class="jumbotron">
         <h1 id="optionsTitle">Choose from our 4 Classic Pizza Special Combos:</h1>
-        <div class="row" id="specials">
-          <div class="col-xs-3">
-            <h3 class="optionTitle">Margharita Style</h3>
-            <img src="img/margharita.png" alt="A Pizza Pie!" />
-            <label class="radio-inline">
-              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
-            </label>
-            <label class="control-label" for="selectsize1">Old Margharita Size: </label>
-            <select class="form-control" id="selectsize1">
-              <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-              <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-              <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-              <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-              <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
-            </select>
-            <label class="control-label" for="selectSauce1">Quantity: </label>
-            <select class="form-control" id="selectSauce1">
-              <option value="0">none</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">More</option>
-            </select>
+        <form class="form-horizontal" id="specialsForm">
+          <div class="row" id="specials">
+
+            <div class="col-xs-3">
+              <h3 class="optionTitle">Old Margharita</h3>
+              <img src="img/margharita.png" alt="A Pizza Pie!" />
+              <br />
+              <label class="control-label" for="selectsize0">Size: </label>
+              <select class="form-control" id="specialSize0">
+                <option value="0">none...($0)</option>
+                <option value="1">Tiny Baby Pie...in a Stroller...($10)</option>
+                <option value="2">Small Child Pie...running around all cray cray...($12)</option>
+                <option value="3">Adolecent Pie...running around all cray with a bigger appetite...($14)</option>
+                <option value="4">Adult Pie...running around all cr...to tired to be cray...($16)</option>
+                <option value="5">Large Adult Pie...strolling slowly all full and gonna go to sleep now...($18)</option>
+              </select>
+              <label class="control-label" for="selectQuantity0">Quantity: </label>
+              <select class="form-control" id="selectQuantity0">
+                <option value="0">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">More</option>
+              </select>
+            </div>
+
+            <div class="col-xs-3">
+              <h3 class=optionTitle>Southern BBQ</h3>
+              <img src="img/bbq-pizza.png" alt="A Pizza Pie!" />
+              <br />
+              <label class="control-label" for="selectsize1">Size: </label>
+              <select class="form-control" id="specialSize1">
+                <option value="0">none...($0)</option>
+                <option value="1">Tiny Baby Pie...in a Stroller...($12)</option>
+                <option value="2">Small Child Pie...running around all cray cray...($14)</option>
+                <option value="3">Adolecent Pie...running around all cray with a bigger appetite...($16)</option>
+                <option value="4">Adult Pie...running around all cr...to tired to be cray...($18)</option>
+                <option value="5">Large Adult Pie...strolling slowly all full and gonna go to sleep now...($20)</option>
+              </select>
+              <label class="control-label" for="selectQuantity1">Quantity: </label>
+              <select class="form-control" id="selectSauce1">
+                <option value="0">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">More</option>
+              </select>
+            </div>
+
+            <div class="col-xs-3">
+              <h3 class="optionTitle">Veggie Supreme</h3>
+              <img src="img/veggie-pie.png" alt="A Pizza Pie!" />
+              <br />
+              <label class="control-label" for="selectsize1">Size: </label>
+              <select class="form-control" id="specialSize2">
+                <option value="0">none...($0)</option>
+                <option value="1">Tiny Baby Pie...in a Stroller...($14)</option>
+                <option value="2">Small Child Pie...running around all cray cray...($16)</option>
+                <option value="3">Adolecent Pie...running around all cray with a bigger appetite...($18)</option>
+                <option value="4">Adult Pie...running around all cr...to tired to be cray...($20)</option>
+                <option value="5">Large Adult Pie...strolling slowly all full and gonna go to sleep now...($22)</option>
+              </select>
+              <label class="control-label" for="selectQuantity2">Quantity: </label>
+              <select class="form-control" id="selectQuantity2">
+                <option value="0">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">More</option>
+              </select>
+            </div>
+
+            <div class="col-xs-3">
+              <h3 class="optionTitle">Gio's Special</h3>
+              <img src="img/supreme-pizza.png" alt="A Pizza Pie!" />
+              <br />
+              <label class="control-label" for="selectsize1"> Size: </label>
+                <select class="form-control" id="specialSize3">
+                  <option value="0">none...($0)</option>
+                  <option value="1">Tiny Baby Pie...in a Stroller...($16)</option>
+                  <option value="2">Small Child Pie...running around all cray cray...($18)</option>
+                  <option value="3">Adolecent Pie...running around all cray with a bigger appetite...($20)</option>
+                  <option value="4">Adult Pie...running around all cr...to tired to be cray...($22)</option>
+                  <option value="5">Large Adult Pie...strolling slowly all full and gonna go to sleep now...($24)</option>
+                </select>
+                </select>
+              <label class="control-label" for="selectSize1">Quantity: </label>
+              <select class="form-control" id="selectSauce1">
+                <option value="0">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">More</option>
+              </select>
+            </div>
           </div>
-          <div class="col-xs-3">
-            <h3 class=optionTitle>BBQ Protein</h3>
-            <img src="img/bbq-pizza.png" alt="A Pizza Pie!" />
-            <label class="radio-inline">
-              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
-            </label>
-            <label class="control-label" for="selectsize1">BBQ Protein Size: </label>
-            <select class="form-control" id="selectsize1">
-              <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-              <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-              <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-              <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-              <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
-            </select>
-            <label class="control-label" for="selectSauce1">Quantity: </label>
-            <select class="form-control" id="selectSauce1">
-              <option value="0">none</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">More</option>
-            </select>
-          </div>
-          <div class="col-xs-3">
-            <h3 class="optionTitle">Veggie Supreme</h3>
-            <img src="img/veggie-pie.png" alt="A Pizza Pie!" />
-            <label class="radio-inline">
-              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
-            </label>
-            <label class="control-label" for="selectsize1">Veggie Supreme Size: </label>
-            <select class="form-control" id="selectsize1">
-              <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-              <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-              <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-              <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-              <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
-            </select>
-            <label class="control-label" for="selectSauce1">Quantity: </label>
-            <select class="form-control" id="selectSauce1">
-              <option value="0">none</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">More</option>
-            </select>
-          </div>
-          <div class="col-xs-3">
-            <h3 class="optionTitle">Giovanni's Special</h3>
-            <img src="img/supreme-pizza.png" alt="A Pizza Pie!" />
-            <label class="radio-inline">
-              <input type="radio" name="orderType" id="inlineRadio2" value="6" checked="checked">Select
-            </label>
-            <label class="control-label" for="selectsize1">Giovanni's Special Size: </label>
-            <select class="form-control" id="selectsize1">
-              <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-              <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-              <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-              <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-              <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
-            </select>
-            <label class="control-label" for="selectSauce1">Quantity: </label>
-            <select class="form-control" id="selectSauce1">
-              <option value="0">none</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">More</option>
-            </select>
-          </div>
-        </div>
-        <br />
-        <h1 id="optionsTitle">Or...Make up your own custom pizza combinations below...</h1>
+          <br />
+          <h1 id="optionsTitle">Or...Make up your own custom pizza combinations below...</h1>
+        </form>
       </div>
     </div>
 
@@ -167,11 +170,12 @@
               <h2 class="optionTitle">1. Choose what size you would like...</h2>
               <label class="control-label" for="selectsize1">Pizza1 Size: </label>
               <select class="form-control" id="selectsize1">
-                <option value="Tiny Baby Pie...in a Stroller">Tiny Baby Pie...in a Stroller</option>
-                <option value="Small Child Pie...running around all cray cray">Small Child Pie...running around all cray cray</option>
-                <option value="Adolecent Pie...running around all cray with a bigger appetite">Adolecent Pie...running around all cray with a bigger appetite</option>
-                <option value="Adult Pie...running around all cr...to tired to be cray">Adult Pie...running around all cr...to tired to be cray</option>
-                <option value="Large Adult Pie...strolling slowly all full and gonna go to sleep now">Large Adult Pie...strolling slowly all full and gonna go to sleep now</option>
+                <option value="0">none...($0)</option>
+                <option value="1">Tiny Baby Pie...in a Stroller...()</option>
+                <option value="2">Small Child Pie...running around all cray cray...($12)</option>
+                <option value="3">Adolecent Pie...running around all cray with a bigger appetite...($14)</option>
+                <option value="4">Adult Pie...running around all cr...to tired to be cray...($16)</option>
+                <option value="5">Large Adult Pie...strolling slowly all full and gonna go to sleep now...($18)</option>
               </select>
               <label class="control-label" for="selectsize2">Pizza2 Size: </label>
               <select class="form-control" id="selectsize1">
@@ -362,7 +366,7 @@
             </div>
 
             <div class="col-xs-4">
-              <h2 class="optionTitle">6. Our Veggie Toppings...</h2>
+              <h2 class="optionTitle">6. Pick Your Veggies...</h2>
               <label class="control-label" for="selectVeggies0">P1 Veggie: </label>
               <select class="form-control" id="selectVeggies0">
                 <option value="0">Spinach</option>
@@ -664,17 +668,14 @@
             <br />
             <div id="patronRadio">
             <label class="radio-block">
-              <input type="radio" name="orderType" id="inlineRadio0" value="0" checked="checked">  Order In
-            </label>
-            <label class="radio-block">
               <input type="radio" name="orderType" id="inlineRadio1" value="1" checked="checked">  Take Out
             </label>
             <label class="radio-block">
-              <input type="radio" name="orderType" id="inlineRadio2" value="2" checked="checked">  Delivery
+              <input type="radio" name="orderType" id="inlineRadio2" value="2" checked="checked">  Delivery (+ $5)
             </label>
             </div>
             <div id="configSubmit">
-              <button type="submit" class="submit_button btn btn-primary btn-lg" align="center" id="submit_button">Toss Um Up!!!</button>
+              <button type="submit" class="submit_button btn btn-danger btn-lg" align="center" id="submit_button">Toss Um Up!!!</button>
             </div>
           </div>
         </form>
@@ -684,14 +685,14 @@
       <div class="jumbotron">
         <div class="row">
           <h1 id="optionsTitle"> It's Checkout Time!</h1>
-          <div class="col-xs-4">
+          <div class="col-xs-8">
             <h2 class="optionTitle"><u>Order Summary</u></h2>
           </div>
           <div class="col-xs-4">
-            <h2 class="optionTitle"><u>Order Total</u></h2>
-          </div>
-          <div class="col-xs-4">
-            <h2 class="optionTitle"><u>Payment Options</u></h2>
+            <h2 class="optionTitle"><u>Payment</u></h2>
+            <div id="configSubmit">
+              <button type="submit" class="submit_button btn btn-success btn-md" align="center" id="submit_button">Run It!</button>
+            </div>
           </div>
         </div>
       </div>

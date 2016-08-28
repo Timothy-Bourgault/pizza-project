@@ -1,5 +1,5 @@
 body {
-  background-color: #B02203;
+  background-color: #750911;
 }
 
 .jumbotron {
@@ -28,13 +28,13 @@ body {
 #lilSlice {
   font-family: 'Mr Dafoe', cursive;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   color: #14174E;
 }
 
 #comeDown {
   font-family: 'Berkshire Swash', cursive;
-  font-size: 2em;
+  font-size: em;
   text-align: center;
   color: #504B1D;
 }
