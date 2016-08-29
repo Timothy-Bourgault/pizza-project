@@ -6,6 +6,10 @@ body {
   background-color: #578C05;
 }
 
+#checkout {
+  display: none;
+}
+
 #angelSlice img{
   width: 24em;
   text-align: center;
@@ -119,4 +123,8 @@ body {
 
 #headRoom {
   margin-top: 1.7em;
+}
+
+#totalHere {
+  text-align: center;
 }
