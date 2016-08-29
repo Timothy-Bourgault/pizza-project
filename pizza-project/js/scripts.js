@@ -15,5 +15,13 @@ function PatronInfo(name, phone, address) {
 $(document).ready(function(){
   $("form#option_fields").submit(function(event){
     event.preventDefault();
+    var size = parseInt($("#selectSize1").val());
+    var crust = parseInt($("#selectCrust1").val());
+    var sauce = parseInt($("#selectSauce1").val());
+    var cheese = parseInt($("#selectCheese1").val());
+    var protein = parseInt($("#selectProtein1").val());
+    var veggie = parseInt($("#selectVeggie1").val());
+    var order = ($("input:radio[name='orderType']:checked").val());
+    var toppings = [];
   })
 })
