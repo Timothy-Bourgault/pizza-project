@@ -11,6 +11,21 @@ function PatronInfo(name, phone, address) {
   this.address = address;
 }
 
+Pizza.prototype.sizePriceUpdate = funtion(size) {
+  if (size === 1) {
+    orderSummary[0].price += 6;
+  } else if (size === 2) {
+    orderSummary[0].price += 8;
+  } else if (size === 3) {
+    orderSummary[0].price += 10;
+  } else if (size === 4) {
+    orderSummary[0].price += 12;
+  } else if (size === 5) {
+    orderSummary[0].price += 14;
+  }  
+
+}
+
 // User Interface Logic
 $(document).ready(function(){
   $("form#option_fields").submit(function(event){
