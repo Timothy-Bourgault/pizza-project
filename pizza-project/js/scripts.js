@@ -106,7 +106,7 @@ var orderSummary = [];
 
 // User Interface Logic
 $(document).ready(function(){
-  $("form#option_fields").submit(function(event){
+  $("form#options_fields").submit(function(event){
     event.preventDefault();
     var size = parseInt($("#selectSize1").val());
     var crust = parseInt($("#selectCrust1").val());
@@ -114,7 +114,7 @@ $(document).ready(function(){
     var cheese = parseInt($("#selectCheese1").val());
     var protein = parseInt($("#selectProtein1").val());
     var veggie = parseInt($("#selectVeggie1").val());
-    var order = ($("input:radio[name='orderType']:checked").val());
+    var order = parseInt($("input:radio[name='orderType']:checked").val());
     var toppings = [];
     var name = $("#patronName1").val();
     var phone = $("#patronPhone1").val();
@@ -126,17 +126,16 @@ $(document).ready(function(){
     toppings.push(veggie);
     toppings.push(order);
 
-    if(size === 0) {
-      console.log();
-    } else if ((size === 1)||(size === 2)||(size === 3)||(size === 4)||(size === 5)) {
+    if((size === 1)||(size === 2)||(size === 3)||(size === 4)||(size === 5)) {
       var pizza1 = new Pizza(size);
     }
+
     for (var i = 0; i < toppings.length; i++) {
       pizza1.toppings.push(toppings[i])
     }
-    alert(pizza1.toppings);
     orderSummary.push(pizza1);
-    pizza1.sizePriceUpdate(size);
+    orderSummary[0].toppingsPriceUpdate();
+    orderSummary[0].sizePriceUpdate(size);
     $("#patronName").text(name);
     $("#patronPhone").text(phone);
     $("#patronAddress").text(address);
