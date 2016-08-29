@@ -11,7 +11,7 @@ function PatronInfo(name, phone, address) {
   this.address = address;
 }
 
-Pizza.prototype.sizePriceUpdate = funtion(size) {
+Pizza.prototype.sizePriceUpdate = function(size) {
   if (size === 1) {
     orderSummary[0].price += 6;
   } else if (size === 2) {
@@ -22,8 +22,84 @@ Pizza.prototype.sizePriceUpdate = funtion(size) {
     orderSummary[0].price += 12;
   } else if (size === 5) {
     orderSummary[0].price += 14;
-  }  
+  }
 
+}
+
+Pizza.prototype.toppingsPriceUpdate = function() {
+  orderSummary[0].toppings.forEach(function(x) {
+    if (x === 6) {
+      orderSummary[0].price += 4;
+    } else if(x === 7) {
+      orderSummary[0].price += 6;
+    } else if(x === 8) {
+      orderSummary[0].price += 8;
+    } else if(x === 9) {
+      orderSummary[0].price += 10;
+    } else if(x === 10) {
+      orderSummary[0].price += 2;
+    } else if(x === 11) {
+      orderSummary[0].price += 2;
+    } else if(x === 12) {
+      orderSummary[0].price += 2;
+    } else if(x === 13) {
+      orderSummary[0].price += 2;
+    } else if(x === 14) {
+      orderSummary[0].price += 2;
+    } else if(x === 15) {
+      orderSummary[0].price += 2;
+    } else if(x === 16) {
+      orderSummary[0].price += 3;
+    } else if(x === 17) {
+      orderSummary[0].price += 4;
+    } else if(x === 18) {
+      orderSummary[0].price += 5;
+    } else if(x === 19) {
+      orderSummary[0].price += 6;
+    } else if(x === 20) {
+      orderSummary[0].price += 7;
+    } else if(x === 21) {
+      orderSummary[0].price += 8;
+    } else if(x === 22) {
+      orderSummary[0].price += 0;
+    } else if(x === 23) {
+      orderSummary[0].price += 3;
+    } else if(x === 24) {
+      orderSummary[0].price += 4;
+    } else if(x === 25) {
+      orderSummary[0].price += 5;
+    } else if(x === 26) {
+      orderSummary[0].price += 6;
+    } else if(x === 27) {
+      orderSummary[0].price += 7;
+    } else if(x === 28) {
+      orderSummary[0].price += 8;
+    } else if(x === 29) {
+      orderSummary[0].price += 9;
+    } else if(x === 30) {
+      orderSummary[0].price += 0;
+    } else if(x === 31) {
+      orderSummary[0].price += 2;
+    } else if(x === 32) {
+      orderSummary[0].price += 2;
+    } else if(x === 33) {
+      orderSummary[0].price += 2;
+    } else if(x === 34) {
+      orderSummary[0].price += 2;
+    } else if(x === 35) {
+      orderSummary[0].price += 2;
+    } else if(x === 36) {
+      orderSummary[0].price += 2;
+    } else if(x === 37) {
+      orderSummary[0].price += 2;
+    } else if(x === 38) {
+      orderSummary[0].price += 2;
+    } else if(x === 39) {
+      orderSummary[0].price += 0;
+    } else if(x === 40) {
+      orderSummary[0].price += 5;
+    }
+  })
 }
 
 // User Interface Logic
@@ -38,5 +114,14 @@ $(document).ready(function(){
     var veggie = parseInt($("#selectVeggie1").val());
     var order = ($("input:radio[name='orderType']:checked").val());
     var toppings = [];
+    var name = $("#patronName1").val();
+    var phone = $("#patronPhone1").val();
+    var address = $("#patronAddress1").val();
+    toppings.push(crust);
+    toppings.push(sauce);
+    toppings.push(cheese);
+    toppings.push(protein);
+    toppings.push(veggie);
+    toppings.push(order);
   })
 })
