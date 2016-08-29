@@ -102,6 +102,8 @@ Pizza.prototype.toppingsPriceUpdate = function() {
   })
 }
 
+var orderSummary = [];
+
 // User Interface Logic
 $(document).ready(function(){
   $("form#option_fields").submit(function(event){
@@ -123,5 +125,23 @@ $(document).ready(function(){
     toppings.push(protein);
     toppings.push(veggie);
     toppings.push(order);
-  })
-})
+
+    if(size === 0) {
+      console.log();
+    } else if ((size === 1)||(size === 2)||(size === 3)||(size === 4)||(size === 5)) {
+      var pizza1 = new Pizza(size);
+    }
+    for (var i = 0; i < toppings.length; i++) {
+      pizza1.toppings.push(toppings[i])
+    }
+    alert(pizza1.toppings);
+    orderSummary.push(pizza1);
+    pizza1.sizePriceUpdate(size);
+    $("#patronName").text(name);
+    $("#patronPhone").text(phone);
+    $("#patronAddress").text(address);
+    $("#totalHere").text("Your Pizza Total Is $" + orderSummary[0].price + ".00");
+    $("#options_screen").fadeToggle();
+    $("#checkout").fadeToggle();
+  });
+});
